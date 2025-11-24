@@ -6,7 +6,6 @@ description: >
 hide_description: true
 permalink: /
 ---
-
 ![MatForge Banner](/assets/images/matforge_banner_temp.png){:class="img-projects"}
 
 ## Overview
@@ -55,6 +54,7 @@ permalink: /
 ### Implemented Techniques
 
 #### ✅ Quad-Optimized Low-Discrepancy Sequences (QOLDS)
+
 **Paper**: Ostromoukhov et al., ACM SIGGRAPH 2024
 **Status**: Complete
 
@@ -67,6 +67,7 @@ permalink: /
 **Benefits**: Foundation layer providing better random samples for all Monte Carlo integration tasks.
 
 #### ✅ Fast Multiple Scattering Approximation (Fast-MSX)
+
 **Paper**: ACM SIGGRAPH 2023
 **Status**: Complete
 
@@ -79,6 +80,7 @@ permalink: /
 **Benefits**: Fixes dark edges on rough materials, improves physical accuracy of GGX BRDF.
 
 #### 🚧 RMIP (Rectangular MinMax Image Pyramid)
+
 **Paper**: Thonat et al., ACM SIGGRAPH Asia 2023
 **Status**: In Progress (GPU data structure complete, ray tracing integration underway)
 
@@ -90,6 +92,7 @@ permalink: /
 **Benefits**: Add high-frequency geometric detail without mesh complexity.
 
 #### 📋 Bounded VNDF Sampling
+
 **Paper**: Eto & Tokuyoshi (AMD), ACM SIGGRAPH Asia 2023
 **Status**: Planned for Milestone 2
 
@@ -118,20 +121,22 @@ permalink: /
 
 ## Team
 
-| Team Member | Role | Technique | Status |
-|-------------|------|-----------|--------|
-| **Yiding Liu** | Sampling Specialist | Quad-Optimized LDS | ✅ Complete |
-| **Cecilia Chen** | Geometry Specialist | RMIP Displacement | 🚧 In Progress |
-| **Xiaonan Pan** | Material Specialist | Fast-MSX + Bounded VNDF | ✅ Fast-MSX Complete |
+| Team Member            | Role                | Technique               | Status               |
+| ---------------------- | ------------------- | ----------------------- | -------------------- |
+| **Yiding Tian**  | Sampling Specialist | Quad-Optimized LDS      | ✅ Complete          |
+| **Cecilia Chen** | Geometry Specialist | RMIP Displacement       | 🚧 In Progress       |
+| **Xiaonan Pan**  | Material Specialist | Fast-MSX + Bounded VNDF | ✅ Fast-MSX Complete |
 
 ---
 
 ## Milestones
 
 ### Milestone 1: November 12, 2025 ✅
+
 **Goal**: Individual techniques working (foundations)
 
 **Achievements**:
+
 - ✅ QOLDS fully integrated (700 LOC)
 - ✅ RMIP GPU data structure builder (800 LOC)
 - ✅ Fast-MSX implementation (350 LOC)
@@ -140,9 +145,11 @@ permalink: /
 [View Milestone 1 Report →](https://github.com/matforge/MatForge/blob/master/doc/presentations/Milestone1.md)
 
 ### Milestone 2: November 24, 2025 🎯
+
 **Goal**: Full pipeline integration + material system
 
 **Target Deliverables**:
+
 - Complete RMIP ray tracing integration
 - Bounded VNDF implementation
 - Material library (7+ materials)
@@ -150,9 +157,11 @@ permalink: /
 - Comparison modes (toggle each technique)
 
 ### Final Presentation: December 7, 2025 📅
+
 **Goal**: Production features + comprehensive analysis
 
 **Final Deliverables**:
+
 - Complete 4-technique pipeline
 - Material parameter editor
 - Demo video
@@ -169,7 +178,6 @@ permalink: /
 - [README.md](https://github.com/matforge/MatForge/blob/master/README.md) - Quick start and build instructions
 - [Milestone 1 Report](https://github.com/matforge/MatForge/blob/master/doc/presentations/Milestone1.md)
 
-
 ### Papers
 
 1. **Quad-Optimized LDS**: Ostromoukhov et al., "Quad-Optimized Low-Discrepancy Sequences", ACM SIGGRAPH 2024
@@ -181,13 +189,14 @@ permalink: /
 
 ## Performance Targets
 
-| Resolution | Quality | Target FPS | Hardware |
-|------------|---------|------------|----------|
-| 1080p | Interactive | 60 | RTX 4070 |
-| 1080p | Balanced | 30 | RTX 4070 |
-| 1440p | Quality | 20 | RTX 4070 |
+| Resolution | Quality     | Target FPS | Hardware |
+| ---------- | ----------- | ---------- | -------- |
+| 1080p      | Interactive | 60         | RTX 4070 |
+| 1080p      | Balanced    | 30         | RTX 4070 |
+| 1440p      | Quality     | 20         | RTX 4070 |
 
 **Expected Improvements**:
+
 - QOLDS: 15-30% variance reduction
 - RMIP: 11× faster than tessellation
 - Bounded VNDF: 15-40% fewer rejected samples
@@ -213,6 +222,7 @@ cmake --build build --config Release
 ```
 
 **Requirements**:
+
 - Windows 10/11
 - NVIDIA RTX GPU (RTX 20-series or newer)
 - Vulkan SDK 1.3+
