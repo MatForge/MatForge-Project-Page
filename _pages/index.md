@@ -18,7 +18,7 @@ permalink: /
 - **Course**: CIS 5650 GPU Programming and Architecture
 - **Semester**: Fall 2025
 - **Institution**: University of Pennsylvania
-- **Team**: 3 Students ([Yiding Liu](#team), [Cecilia Gao](#team), [Xiaonan Zhang](#team))
+- **Team**: 3 Students ([Yiding Liu](#team), [Cecilia Chen](#team), [Xiaonan Pan](#team))
 - **Timeline**: November 3 - December 7, 2025 (5 weeks)
 - **Platform**: Vulkan 1.3 with ray tracing extensions
 - **Base Framework**: Forked from [NVIDIA nvpro-samples/vk_gltf_renderer](https://github.com/nvpro-samples/vk_gltf_renderer)
@@ -121,8 +121,8 @@ permalink: /
 | Team Member | Role | Technique | Status |
 |-------------|------|-----------|--------|
 | **Yiding Liu** | Sampling Specialist | Quad-Optimized LDS | ✅ Complete |
-| **Cecilia Gao** | Geometry Specialist | RMIP Displacement | 🚧 In Progress |
-| **Xiaonan Zhang** | Material Specialist | Fast-MSX + Bounded VNDF | ✅ Fast-MSX Complete |
+| **Cecilia Chen** | Geometry Specialist | RMIP Displacement | 🚧 In Progress |
+| **Xiaonan Pan** | Material Specialist | Fast-MSX + Bounded VNDF | ✅ Fast-MSX Complete |
 
 ---
 
